@@ -6279,25 +6279,12 @@ html.ngdialog-open {
 .ngdialog.ngdialog-theme-default.auto .ngdialog-content {
   text-align: center;
 }
-.col-centered {
-  float: none;
-  margin: 0 auto;
+.ngdialog.ngdialog-theme-default.auto .ngdialog-content img {
+  width: 100%;
+  height: auto;
 }
-.text-center {
-  text-align: center;
-}
-.cursor-pointer {
-  cursor: pointer;
-}
-body {
-  background: #f1f4f9;
-}
-.btn {
-  padding: 10px 30px;
-}
-.radio,
-.checkbox {
-  margin: 0;
+.ngdialog.ngdialog-theme-default.auto .ngdialog-close:before {
+  background: #ffffff;
 }
 .table {
   border: 1px #c9d3dc solid;
@@ -6328,14 +6315,45 @@ body {
   color: #3e617e;
   padding: 15px !important;
 }
-header {
-  margin-bottom: 20px;
+.col-centered {
+  float: none;
+  margin: 0 auto;
 }
-header .row {
-  background: #1f89e2;
+.text-center {
+  text-align: center;
 }
-header #logo {
+.cursor-pointer {
+  cursor: pointer;
+}
+.btn {
+  padding: 10px 30px;
+}
+.radio,
+.checkbox {
   margin: 0;
+}
+.sort {
+  cursor: pointer;
+}
+.sort:after {
+  content: '\e150';
+  display: inline-block;
+  vertical-align: baseline;
+  margin: 0 0 0 10px;
+  font-family: 'Glyphicons Halflings';
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.sort.st-sort-ascent,
+.sort.st-sort-descent {
+  background-color: #f9f9f9;
+}
+.sort.st-sort-ascent:after {
+  content: '\e151';
+}
+.sort.st-sort-descent:after {
+  content: '\e152';
 }
 .cg-notify-message {
   position: fixed;
@@ -6406,4 +6424,16 @@ header #logo {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+body {
+  background: #f1f4f9;
+}
+header {
+  margin-bottom: 20px;
+}
+header .row {
+  background: #1f89e2;
+}
+header #logo {
+  margin: 0;
 }
